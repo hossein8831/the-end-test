@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>
+                اطلاعات عمومی
+        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center">
+        <div class="bg-white p-8 rounded-lg shadow-md w-full md:w-1/2 lg:w-1/3 border-2 border-green-600">
+                <h1 class="text-3xl font-bold text-center mb-8">اطلاعات عمومی</h1>
+                <div class="flex flex-col mb-4">
+                        <label for="topic" class="text-lg font-semibold mb-2">یک کلمه وارد کنید:</label>
+                        <input type="text" id="topic" class="border border-gray-300 rounded-md py-2 px-3 focus:outline-none">
+                </div>
+                <div class="flex justify-center space-x-4">
+                        <button id="searchButton" class="bg-green-500 text-white px-6 py-2 rounded-md focus:outline-none">جستجو</button>
+                        <button id="clearButton" class="bg-red-500 text-white px-6 py-2 rounded-md focus:outline-none">پاک کن</button>
+                        <button id="downloadButton" class="bg-blue-500 text-white px-6 py-2 rounded-md focus:outline-none hidden">دانلود کن</button>
+                </div>
+                <div id="img1">
+
+                </div>
+                <div id="summary" class="mt-8"></div>
+                <strong>:ترجمه به</strong>
+                <button id="english" class="bg-yellow-500 text-white px-6 py-2 rounded-md focus:outline-none">زبان انگلیسی</button>
+                <button id="persian" class="bg-blue-500  text-white px-6 py-2 rounded-md focus:outline-none">زبان فارسی</button>
+        
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
